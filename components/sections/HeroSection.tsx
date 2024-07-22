@@ -40,7 +40,7 @@ function HeroSection() {
                     <h1>You can also see me on</h1>
                     <div className='flex items-center gap-4'>
                         {socialImg.map((_, i)=>(
-                            <div className='relative h-[30px] w-[30px]'>
+                            <div key={i} className='relative h-[30px] w-[30px]'>
                                 <Image 
                                     fill
                                     src={socialImg[i]}
