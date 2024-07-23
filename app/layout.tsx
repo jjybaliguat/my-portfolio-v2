@@ -24,7 +24,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-          <div className="md:px-[50px] px-[20px] lg:px-[160px]">
+          <div className="md:px-[30px] px-[10px] lg:px-[160px] overflow-visible">
             {children}
           </div>
         </ThemeProvider>
