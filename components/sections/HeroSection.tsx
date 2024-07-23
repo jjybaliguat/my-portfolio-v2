@@ -3,6 +3,9 @@ import React from 'react'
 import { TypewriterEffect } from '../ui/typewriter-effect'
 import { title } from 'process'
 import Navbar from './Navbar'
+import { MousePointer, MousePointer2 } from 'lucide-react'
+import MagicButton from '../ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa6'
 
 const introText1 = "Hello, I am Justine Jerald Baliguat"
 const introText2 = [
@@ -29,7 +32,7 @@ function HeroSection() {
     <div className='relative pb-20 pt-28 min-h-[100vh] h-fit w-full'>
         <Navbar />
         <div className='w-full flex flex-col-reverse md:flex-row items-center gap-4 md:justify-between justify-center'>
-            <div className='flex flex-col max-w-[70%] gap-8 md:items-start items-center'>
+            <div className='flex flex-col md:w-[70%] gap-8 md:items-start items-center'>
                 <div className='md:text-left text-center'>
                 <div className="inline-block">
                     {introText1.split(" ").map((char, index) => (
@@ -46,9 +49,16 @@ function HeroSection() {
                     className='md:text-left text-center'
                     />
                 </div>
-                 <button className="md:px-8 px-4 md:py-4 py-3 md:text-[16px] text-[14px] rounded-[14px] w-fit bg-gradient-to-r from-[#043A8C] via-[#062047] to-[#06091F] text-white hover:shadow-xl transition duration-200">
-                    View my work
-                </button>
+                <a href="#about">
+                    <MagicButton
+                    title="Show my work"
+                    icon={<FaLocationArrow />}
+                    position="right"
+                    />
+                </a>
+                 {/* <button className="flex items-center gap-2 md:px-8 px-4 md:py-4 py-3 md:text-[16px] text-[14px] rounded-[14px] w-fit bg-gradient-to-r from-[#043A8C] via-[#062047] to-[#06091F] text-white hover:shadow-xl transition duration-200">
+                    Show my work <MousePointer2 />
+                </button> */}
                 <div className='flex flex-col gap-2'>
                     <h1>My Social Accounts</h1>
                     <div className='flex items-center gap-4'>
