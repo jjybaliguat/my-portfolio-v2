@@ -22,8 +22,12 @@ const navLinks = [
 
 function Navbar() {
   return (
-    <div className='absolute top-0 left-1/2 transform -translate-x-1/2 py-8 px-8 flex items-center gap-8'>
-        <NavItems />
+    <div className='w-full shadow-md sticky top-0 z-50'>
+        <nav className='mx-auto relative flex flex-wrap items-center justify-center py-6 px-8 xl:px-28'>
+            <div className='flex items-center gap-8'>
+                <NavItems />
+            </div>
+        </nav>
     </div>
   )
 }
